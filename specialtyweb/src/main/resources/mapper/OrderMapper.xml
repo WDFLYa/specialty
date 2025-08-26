@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="nuc.edu.cn.specialtyweb.mapper.OrderMapper">
+    <select id="selectByUserId" resultType="nuc.edu.cn.specialtyweb.entity.Order">
+        SELECT * FROM orders WHERE user_id = #{userId}
+    </select>
+</mapper>
